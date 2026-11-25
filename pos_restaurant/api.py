@@ -1,4 +1,4 @@
-# Copyright (c) 2026, Grupo Altoplano and contributors
+# Copyright (c) 2026, pos-restaurant and contributors
 # For license information, please see license.txt
 
 import json
@@ -150,7 +150,7 @@ def get_modifiers(item_code):
 	for link in item.get("custom_restaurant_modifier_groups") or []:
 		if not link.modifier_group:
 			continue
-		grp = frappe.get_doc("AP Modifier Group", link.modifier_group)
+		grp = frappe.get_doc("Restaurant Modifier Group", link.modifier_group)
 		groups.append(
 			{
 				"group": grp.name,

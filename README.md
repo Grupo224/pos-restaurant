@@ -1,4 +1,4 @@
-### Altoplano POS Restaurant
+### Restaurant
 
 Modulo de restaurante (comandas y cocina) para POS Next
 
@@ -9,7 +9,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 ```bash
 cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app altoplano_pos_restaurant
+bench install-app pos_restaurant
 ```
 
 ### Contributing
@@ -17,7 +17,7 @@ bench install-app altoplano_pos_restaurant
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
 ```bash
-cd apps/altoplano_pos_restaurant
+cd apps/pos_restaurant
 pre-commit install
 ```
 

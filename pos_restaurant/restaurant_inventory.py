@@ -1,4 +1,4 @@
-# Copyright (c) 2026, Grupo Altoplano and contributors
+# Copyright (c) 2026, pos-restaurant and contributors
 # For license information, please see license.txt
 
 import json

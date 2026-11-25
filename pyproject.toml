@@ -1,7 +1,7 @@
 [project]
-name = "altoplano_pos_restaurant"
+name = "pos_restaurant"
 authors = [
-    { name = "Grupo Altoplano", email = "soporte@altoplano.mx"}
+    { name = "pos-restaurant", email = "support@pos-restaurant.dev"}
 ]
 description = "Modulo de restaurante (comandas y cocina) para POS Next"
 requires-python = ">=3.10"

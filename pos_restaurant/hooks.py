@@ -1,8 +1,8 @@
-app_name = "altoplano_pos_restaurant"
-app_title = "Altoplano POS Restaurant"
-app_publisher = "Grupo Altoplano"
+app_name = "pos_restaurant"
+app_title = "Restaurant"
+app_publisher = "pos-restaurant"
 app_description = "Modulo de restaurante (comandas y cocina) para POS Next"
-app_email = "soporte@altoplano.mx"
+app_email = "support@pos-restaurant.dev"
 app_license = "mit"
 
 # Apps
@@ -13,11 +13,11 @@ required_apps = ["pos_next"]
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
-# 		"name": "altoplano_pos_restaurant",
-# 		"logo": "/assets/altoplano_pos_restaurant/logo.png",
-# 		"title": "Altoplano POS Restaurant",
-# 		"route": "/altoplano_pos_restaurant",
-# 		"has_permission": "altoplano_pos_restaurant.api.permission.has_app_permission"
+# 		"name": "pos_restaurant",
+# 		"logo": "/assets/pos_restaurant/logo.png",
+# 		"title": "Restaurant",
+# 		"route": "/pos_restaurant",
+# 		"has_permission": "pos_restaurant.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -25,15 +25,15 @@ required_apps = ["pos_next"]
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/altoplano_pos_restaurant/css/altoplano_pos_restaurant.css"
-# app_include_js = "/assets/altoplano_pos_restaurant/js/altoplano_pos_restaurant.js"
+# app_include_css = "/assets/pos_restaurant/css/pos_restaurant.css"
+# app_include_js = "/assets/pos_restaurant/js/pos_restaurant.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/altoplano_pos_restaurant/css/altoplano_pos_restaurant.css"
-# web_include_js = "/assets/altoplano_pos_restaurant/js/altoplano_pos_restaurant.js"
+# web_include_css = "/assets/pos_restaurant/css/pos_restaurant.css"
+# web_include_js = "/assets/pos_restaurant/js/pos_restaurant.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "altoplano_pos_restaurant/public/scss/website"
+# website_theme_scss = "pos_restaurant/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -51,7 +51,7 @@ required_apps = ["pos_next"]
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "altoplano_pos_restaurant/public/icons.svg"
+# app_include_icons = "pos_restaurant/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -75,60 +75,60 @@ required_apps = ["pos_next"]
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "altoplano_pos_restaurant.utils.jinja_methods",
-# 	"filters": "altoplano_pos_restaurant.utils.jinja_filters"
+# 	"methods": "pos_restaurant.utils.jinja_methods",
+# 	"filters": "pos_restaurant.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "altoplano_pos_restaurant.install.before_install"
-# after_install = "altoplano_pos_restaurant.install.after_install"
+# before_install = "pos_restaurant.install.before_install"
+# after_install = "pos_restaurant.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "altoplano_pos_restaurant.uninstall.before_uninstall"
-# after_uninstall = "altoplano_pos_restaurant.uninstall.after_uninstall"
+# before_uninstall = "pos_restaurant.uninstall.before_uninstall"
+# after_uninstall = "pos_restaurant.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "altoplano_pos_restaurant.utils.before_app_install"
-# after_app_install = "altoplano_pos_restaurant.utils.after_app_install"
+# before_app_install = "pos_restaurant.utils.before_app_install"
+# after_app_install = "pos_restaurant.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "altoplano_pos_restaurant.utils.before_app_uninstall"
-# after_app_uninstall = "altoplano_pos_restaurant.utils.after_app_uninstall"
+# before_app_uninstall = "pos_restaurant.utils.before_app_uninstall"
+# after_app_uninstall = "pos_restaurant.utils.after_app_uninstall"
 
 # Build
 # ------------------
 # To hook into the build process
 
-# after_build = "altoplano_pos_restaurant.build.after_build"
+# after_build = "pos_restaurant.build.after_build"
 
 # To hook into the build process of other apps
 # The list of apps being built is passed as an argument
 
-# after_app_build = "altoplano_pos_restaurant.build.after_app_build"
+# after_app_build = "pos_restaurant.build.after_app_build"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "altoplano_pos_restaurant.notifications.get_notification_config"
+# notification_config = "pos_restaurant.notifications.get_notification_config"
 
 # Awesome Bar
 # -----------
 # Extra search results: list of dicts with label, description, route, index.
 # route: ["List", "ToDo"], "/desk/docs/some/page", or "https://example.com"
-# awesomebar_search = ["altoplano_pos_restaurant.search.awesomebar_results"]
+# awesomebar_search = ["pos_restaurant.search.awesomebar_results"]
 
 # Permissions
 # -----------
@@ -167,39 +167,39 @@ required_apps = ["pos_next"]
 
 # scheduler_events = {
 # 	"all": [
-# 		"altoplano_pos_restaurant.tasks.all"
+# 		"pos_restaurant.tasks.all"
 # 	],
 # 	"daily": [
-# 		"altoplano_pos_restaurant.tasks.daily"
+# 		"pos_restaurant.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"altoplano_pos_restaurant.tasks.hourly"
+# 		"pos_restaurant.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"altoplano_pos_restaurant.tasks.weekly"
+# 		"pos_restaurant.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"altoplano_pos_restaurant.tasks.monthly"
+# 		"pos_restaurant.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "altoplano_pos_restaurant.install.before_tests"
+# before_tests = "pos_restaurant.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "altoplano_pos_restaurant.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "pos_restaurant.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "altoplano_pos_restaurant.task.get_dashboard_data"
+# 	"Task": "pos_restaurant.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -213,13 +213,13 @@ required_apps = ["pos_next"]
 
 # Request Events
 # ----------------
-# before_request = ["altoplano_pos_restaurant.utils.before_request"]
-# after_request = ["altoplano_pos_restaurant.utils.after_request"]
+# before_request = ["pos_restaurant.utils.before_request"]
+# after_request = ["pos_restaurant.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["altoplano_pos_restaurant.utils.before_job"]
-# after_job = ["altoplano_pos_restaurant.utils.after_job"]
+# before_job = ["pos_restaurant.utils.before_job"]
+# after_job = ["pos_restaurant.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -249,7 +249,7 @@ required_apps = ["pos_next"]
 # --------------------------------
 
 # auth_hooks = [
-# 	"altoplano_pos_restaurant.auth.validate"
+# 	"pos_restaurant.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
@@ -268,7 +268,7 @@ required_apps = ["pos_next"]
 # === Restaurant inventory doc_events ===
 doc_events = {
 	"Sales Invoice": {
-		"on_submit": "altoplano_pos_restaurant.restaurant_inventory.on_sales_invoice_submit",
-		"on_cancel": "altoplano_pos_restaurant.restaurant_inventory.on_sales_invoice_cancel",
+		"on_submit": "pos_restaurant.restaurant_inventory.on_sales_invoice_submit",
+		"on_cancel": "pos_restaurant.restaurant_inventory.on_sales_invoice_cancel",
 	}
 }

@@ -15,7 +15,7 @@
             "fieldtype": "Link",
             "in_list_view": 1,
             "label": "Modifier Group",
-            "options": "AP Modifier Group",
+            "options": "Restaurant Modifier Group",
             "reqd": 1
         },
         {
@@ -28,8 +28,8 @@
     "links": [],
     "modified": "2026-11-25 00:00:00.000000",
     "modified_by": "Administrator",
-    "module": "Altoplano POS Restaurant",
-    "name": "AP Item Modifier Group",
+    "module": "Restaurant",
+    "name": "Restaurant Item Modifier Group",
     "owner": "Administrator",
     "permissions": [],
     "sort_field": "idx",

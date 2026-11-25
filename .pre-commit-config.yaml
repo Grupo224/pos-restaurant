@@ -8,7 +8,7 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
-        files: "altoplano_pos_restaurant.*"
+        files: "pos_restaurant.*"
         exclude: ".*json$|.*txt$|.*csv|.*md|.*svg"
       - id: check-merge-conflict
       - id: check-ast
@@ -38,11 +38,11 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                altoplano_pos_restaurant/public/dist/.*|
+                pos_restaurant/public/dist/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                altoplano_pos_restaurant/templates/includes/.*|
-                altoplano_pos_restaurant/public/js/lib/.*
+                pos_restaurant/templates/includes/.*|
+                pos_restaurant/public/js/lib/.*
             )$
 
 
@@ -55,12 +55,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                altoplano_pos_restaurant/public/dist/.*|
+                pos_restaurant/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                altoplano_pos_restaurant/templates/includes/.*|
-                altoplano_pos_restaurant/public/js/lib/.*
+                pos_restaurant/templates/includes/.*|
+                pos_restaurant/public/js/lib/.*
             )$
 
 ci:
