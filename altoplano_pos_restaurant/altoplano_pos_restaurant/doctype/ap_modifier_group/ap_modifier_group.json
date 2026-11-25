@@ -1,0 +1,121 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:title",
+    "creation": "2026-11-25 00:00:00.000000",
+    "doctype": "DocType",
+    "document_type": "Other",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "title",
+        "selection_type",
+        "is_required",
+        "column_break_1",
+        "min_selections",
+        "max_selections",
+        "sort_order",
+        "section_break_options",
+        "options"
+    ],
+    "fields": [
+        {
+            "fieldname": "title",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Title",
+            "reqd": 1
+        },
+        {
+            "default": "Multiple",
+            "fieldname": "selection_type",
+            "fieldtype": "Select",
+            "label": "Selection Type",
+            "options": "Single\nMultiple"
+        },
+        {
+            "default": "0",
+            "fieldname": "is_required",
+            "fieldtype": "Check",
+            "label": "Is Required"
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "min_selections",
+            "fieldtype": "Int",
+            "label": "Min Selections"
+        },
+        {
+            "fieldname": "max_selections",
+            "fieldtype": "Int",
+            "label": "Max Selections"
+        },
+        {
+            "fieldname": "sort_order",
+            "fieldtype": "Int",
+            "label": "Sort Order"
+        },
+        {
+            "fieldname": "section_break_options",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "options",
+            "fieldtype": "Table",
+            "label": "Options",
+            "options": "AP Modifier Option",
+            "reqd": 1
+        }
+    ],
+    "links": [],
+    "modified": "2026-11-25 00:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Altoplano POS Restaurant",
+    "name": "AP Modifier Group",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "POSNext Cashier",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Nexus POS Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "sort_order",
+    "sort_order": "ASC",
+    "states": [],
+    "track_changes": 0
+}

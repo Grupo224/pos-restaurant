@@ -1,0 +1,187 @@
+{
+    "actions": [],
+    "autoname": "hash",
+    "creation": "2026-11-24 00:00:00.000000",
+    "doctype": "DocType",
+    "document_type": "Other",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "status",
+        "channel",
+        "destination",
+        "company",
+        "pos_profile",
+        "column_break_1",
+        "order_reference",
+        "request_id",
+        "delivery_type",
+        "delivery_partner",
+        "section_break_times",
+        "started_at",
+        "ready_at",
+        "delivered_at",
+        "section_break_items",
+        "items",
+        "section_break_cancel",
+        "cancellation_reason",
+        "cancellation_seen"
+    ],
+    "fields": [
+        {
+            "default": "Pendiente",
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "in_standard_filter": 1,
+            "label": "Status",
+            "options": "Pendiente\nEn preparación\nLista\nEntregada\nCancelada"
+        },
+        {
+            "fieldname": "channel",
+            "fieldtype": "Select",
+            "label": "Canal",
+            "options": "Mesa\nPickup\nDelivery",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "destination",
+            "fieldtype": "Data",
+            "label": "Destino",
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "company",
+            "fieldtype": "Link",
+            "label": "Company",
+            "options": "Company",
+            "reqd": 1
+        },
+        {
+            "fieldname": "pos_profile",
+            "fieldtype": "Link",
+            "label": "POS Profile",
+            "options": "POS Profile"
+        },
+        {
+            "fieldname": "column_break_1",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "order_reference",
+            "fieldtype": "Data",
+            "label": "Order Reference"
+        },
+        {
+            "fieldname": "request_id",
+            "fieldtype": "Data",
+            "label": "Request ID",
+            "unique": 1
+        },
+        {
+            "fieldname": "delivery_type",
+            "fieldtype": "Select",
+            "label": "Tipo de entrega",
+            "options": "Interno\nExterno"
+        },
+        {
+            "fieldname": "delivery_partner",
+            "fieldtype": "Data",
+            "label": "Repartidor"
+        },
+        {
+            "fieldname": "section_break_times",
+            "fieldtype": "Section Break",
+            "label": "Tiempos"
+        },
+        {
+            "fieldname": "started_at",
+            "fieldtype": "Datetime",
+            "label": "Iniciado",
+            "read_only": 1
+        },
+        {
+            "fieldname": "ready_at",
+            "fieldtype": "Datetime",
+            "label": "Listo",
+            "read_only": 1
+        },
+        {
+            "fieldname": "delivered_at",
+            "fieldtype": "Datetime",
+            "label": "Entregado",
+            "read_only": 1
+        },
+        {
+            "fieldname": "section_break_items",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "items",
+            "fieldtype": "Table",
+            "label": "Items",
+            "options": "Comanda Item"
+        },
+        {
+            "fieldname": "section_break_cancel",
+            "fieldtype": "Section Break"
+        },
+        {
+            "fieldname": "cancellation_reason",
+            "fieldtype": "Small Text",
+            "label": "Cancellation Reason"
+        },
+        {
+            "default": "0",
+            "fieldname": "cancellation_seen",
+            "fieldtype": "Check",
+            "label": "Cancellation Seen"
+        }
+    ],
+    "links": [],
+    "modified": "2026-11-24 00:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Altoplano POS Restaurant",
+    "name": "Comanda",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "POSNext Cashier",
+            "share": 1,
+            "write": 1
+        },
+        {
+            "create": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "Nexus POS Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+}
